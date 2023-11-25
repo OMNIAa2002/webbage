@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"style="  height: 80px;">
+        <div class="container-fluid">
+            <input type="image" src="images/photo_2023-10-28_01-03-43.jpg" class="rounded-circle mx-4 shadow" alt="picture" width="70px" height="70px">
+          <a class="navbar-brand" href="#"style="border-right: padding-right: 10px; font-weight:bold;">Türkiye</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Trips
+                </a>
+                <ul class="dropdown-menu bg-secondary " aria-labelledby="navbarScrollingDropdown" style="opacity: 1;">
+                  <li><a class="dropdown-item" href="#">Istanbul</a></li>
+                  <li><a class="dropdown-item" href="#">Antalya</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Kapadokya</a></li>
+                  <li><a class="dropdown-item" href="#">Fethiye</a></li>
+                  <li><a class="dropdown-item" href="#">Izmir</a></li>
+                  <li><a class="dropdown-item" href="#">Bursa</a></li>
+                  <li><a class="dropdown-item" href="#">Gaziantep</a></li>
+                  <li><a class="dropdown-item" href="#">Ankara</a></li>
+
+
+
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+                
+              <input class="form-control me-3" type="search" placeholder="Search" aria-label="Search">
+              </form>
+              <!-- <form class="d-flex">
+              <button class="btn btn-outline-secondary me-3"  type="submit">Search</button>
+              <button class="btn btn-outline-secondary" type="submit">login</button>
+              </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <form action="/action_page.php">
+      <div class="mb-3 mt-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="mb-3">
+        <label for="pwd" class="form-label">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+      </div>
+      <div class="form-check mb-3">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember"> Remember me
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form> -->
+    <!-- <form class="d-flex">
+      <input class="form-control m-3 border-3 border-info rounded-3" type="search" placeholder="Search"
+        aria-label="Search"> -->
+
+    </form>
+    <form class="d-flex">
+      <button class=" navbtn btn  text-white me-3 border-3 rounded-3 shadow-lg"
+        type="submit"   style=" background-color:rgb(188, 199, 199); ">Search</button>
+      <button class="navbtn btn  text-white border-3  rounded-3 shadow-lg" type="button"
+        data-bs-toggle="modal" data-bs-target="#myModal"  style=" background-color:rgb(188, 199, 199); " >Login</button>
+    </form> <!-- /form -->
+  </div> <!-- /navbar-collapse -->
+
+</div>
+</nav>
+<!-- /navbar -->
+</header> <!-- /header -->
+<!-- Modal -->
+<div class="modal fade" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  <div class="modal-header "  style=" background-color:rgb(188, 199, 199); ">
+    <h5 class="modal-title text-light shadow-lg font-weight-bolder" id="staticBackdropLabel">Login</h5>
+    <button type="button" class="btn btn-close bg-light " data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+    <!-- form -->
+    <form>
+      <div class="m-3">
+        <label class="form-label ">Email address</label>
+        <input type="email" class="form-control  border-3 rounded-2"
+          aria-describedby="emailHelp">
+        <p class="form-text text-secondary">We'll never share your email with anyone else.</p>
+      </div>
+      <div class="m-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control border-3 rounded-2">
+      </div>
+      <div class="m-3 form-check">
+        <div class="form-check form-switch">
+          <input class="form-check-input " type="checkbox" role="switch" checked   style=" background-color:rgb(188, 199, 199); ">
+          <label class="form-check-label " for="flexSwitchCheckChecked">Remmember me</label>
+        </div>
+      </div> <!-- /form check -->
+
+    </form>
+    <!-- /form -->
+    <div class="modal-footer d-flex  justify-content-between">
+      <button type="submit" class="btn  text-light"   style=" background-color:rgb(188, 199, 199); ">Login</button>
+      <button type="button" class="btn  text-light" data-bs-dismiss="modal"   style=" background-color:rgb(188, 199, 199); ">Close</button>
+    </div> <!-- /model-footer -->
+  </div> <!-- /model-body -->
+</div> <!-- /modal-content -->
+</div> <!-- /modal-dialog -->
+</div> <!-- /modal -->
+
+</main>
+<aside>
+  <div class="container-fluid p-0 " style="position: relative; font-size: 55px;">
+
+    <div class="d-flex flex-column justify-content-between ms-auto" 
+      style="position: fixed;z-index: 90;top: 200px;right:20px;">
+      <div class="aside-icon "><a href="#"><i class="fab fa-facebook"></i></a></div>
+      <div class="aside-icon "><a href="#"><i class="fab fa-whatsapp-square"></i></a></div>
+      <div class="aside-icon "><a href="#"><i class="fab fa-twitter-square"></i></a></div>
+      <div class="aside-icon "><a href="#"><i class="fab fa-linkedin"></i></a></div>
+      <div class="aside-icon "><a href="#"><i class="fab fa-instagram-square"></i></a></div>
+    </div>
+</aside>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/11678_istanbul-city-turkey-hd-wallpapers_1024x768_h.jpg" class="d-block w-100" style="height: 620px;" >
+            <div class="carousel-caption">
+        
+                <h1>Istanbul</h1>
+                <p>We love this city!</p>
+                <a href="#" class="btn  text-white text-shadow" target="_blank" style=" background-color: rgb(136, 192, 192);
+                ">Visit Us</a>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/256097.jpeg" class="d-block w-100"style="height: 620px;">
+            <div class="carousel-caption">
+                <h1>Ankara</h1>
+                <p>We love this city!</p>
+                <a href="#" class="btn  text-white text-shadow" target="_blank" style=" background-color: rgb(136, 192, 192);" >Visit Us</a>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/المنطاد-في-تركيا.jpg" class="d-block w-100" style="height: 620px;">
+            <div class="carousel-caption">
+                <h1>Kapadokya</h1>
+                <p>We love this city!</p>
+                <a href="#" class="btn  text-white text-shadow" target="_blank"  style=" background-color: rgb(136, 192, 192);" >Visit Us</a>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/223321.jpg" class="d-block w-100" style="height: 620px;">
+            <div class="carousel-caption">
+                <h1>Gaziantep</h1>
+                <p>We love this city!</p>
+                <a href="#"    class="btn  text-light text-shadow" target="_blank"  style=" background-color: rgb(156, 196, 196);">Visit Us</a>
+              </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="cardg  shadow-lg  mb-3"    style="border-top-left-radius: 0; border-top-right-radius:0 ;background-color: rgb(213, 218, 218); ">
+        <div class="card-header ">WELCOM</div>
+        <div class="card-body">
+          <h5 class="card-title">Tourist attractions and areas visited by tourists from all over the world are spread throughout Turkey.It provides its tourist visitors with a number of diverse options. Beach tourism, for example, is witnessing an increasing demand in the beaches of Kabak, Kilbaklar, Shirli and Patara Most of the terrain </h5>
+          <a href="#" id="rr" class="btn btn-light text-light  btn-lg m-auto">Learn more</a>
+
+        </div>
+      </div>
+      <hr>
+      <div class="mx-auto my-3 p-5  text-light text-center text-shadow rounded-3 shadow-lg "
+      style="background-color: rgb(220, 224, 224);">
+      <h1>Popular destinations in Turkiye</h1>
+    </div>
+    <div class="accordion" id="accordioncollapse">
+      <div class="accordion-item">
+        <h2 class="accordion-header " id="head1">
+          <button class="accordion-button collapsed btn text-dark title shadow-lg " type="button"
+            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+            style="font-size: 20px;">
+            Izmir
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="head1"
+          data-bs-parent="#accordioncollapse">
+          <div class="accordion-body  text-secondary">
+            It is a city located in western Anatolia, Turkey. It is the third most populous city in Turkey after Istanbul and Ankara. It is the first export port and the center for selling products from the Aegean Valleys, which are rich in agricultural crops. It has an important market for distributing imported manufactured products, and an annual exhibition is held there. </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="head2">
+          <button class="accordion-button collapsed btn text-dark title shadow-lg " type="button"
+            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Istanbul
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="head2"
+          data-bs-parent="#accordioncollapse">
+          <div class="accordion-body  text-dark">
+            Istanbul contains thirty-nine residential areas, and this is what contributed to the development of its population density. The total number of residents of the city of Istanbul reaches approximately eighteen million people, and the origins of most of the population are of Turkish origins, with the presence of groups of immigrants. For the purpose of work, education, or permanent settlement in the city from European, Arab, and Asian countrie 
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="head3">
+            <button class="accordion-button collapsed btn text-dark  shadow-lg title" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+              aria-controls="collapseThree">
+              Kapadokya
+              
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="head3"
+            data-bs-parent="#accordioncollapse">
+            <div class="accordion-body  text-secondary">
+              Cappadocia is located in eastern Anatolia, in the center of modern-day Türkiye. Its terrain consists of a plateau plain 1,000 meters above sea level, interspersed with volcanic peaks, and Mount Argeis, near Caesarea, which is the highest of the highlands, as its summit is located at an altitude of 3,916 metres. The borders of Cappadocia are not exactly clear, especially towards the west. To the south, the Taurus Mountains form the border with Cilicia and separate it from the Mediterranean Sea. To the west, Cappadocia is bordered by the provinces of Lyconia to the southwest and Galatia to the northwest. The coastal mountain range of the Black Sea separates Cappadocia from the Pontus and the Black Sea to the north, while it is bordered to the east by the Upper Euphrates River, before it turns to the southeast to empty into Mesopotamia and the Armenian Highlands. </div>
+          </div>
+        </div>
+        <hr>
+        <div class="mx-auto mt-3 p-2  text-light text-center text-shadow rounded-3 shadow-lg "
+        style="background-color:   rgb(220, 224, 224);">
+        <h1>Translate From Arabic To English</h1>
+      </div>
+      <!-- card1 -->
+      <div class="cardv p-3  text-white shadow-lg"
+        style="border-top-left-radius: 0; border-top-right-radius:0 ;background-color: rgb(240, 241, 241) ;">
+        <div class="card-body">
+          <h4 class="card-title text-dark  ">ًWrite and Translate <a href="https://translate.google.com.eg/?hl=en"
+              target="_blank" rel="noopener">  Press Here</a></h4>
+          <button
+            class="btn btn-light text-light border border-3 btntranslate .btntranslate::before .btntranslate::after shadow-lg "
+            onclick="copyToClipboard('sentence')" id="btnCopy" style="font-size: 20px;">
+            Copy
+          </button>
+          <br>
+          <textarea id="sentence" class="form-control mx-auto mt-3" rows="5" id="comment" placeholder="translate:"
+            name="text"></textarea>
+        </div>
+      </div>
+      <hr>
+        <div class="mx-auto mt-3 p-2  text-light text-center text-shadow rounded-3 shadow-lg "
+        style="background-color:   rgb(205, 209, 209);">
+        <h1>Translate From Arabic To Arabic</h1>
+      </div>
+      <!-- card1 -->
+      <hr>
+     
+      <!-- card1 -->
+      <div class="cardv p-3  text-white shadow-lg"
+        style="border-top-left-radius: 0; border-top-right-radius:0 ;background-color:  rgb(250, 250, 250) ;">
+        <div class="card-body">
+          <h4 class="card-title text-dark ">ًWrite and Translate <a href="https://translate.google.com.eg/?hl=en"
+              target="_blank" rel="noopener">Press Here</a></h4>
+          <button
+            class="btn btn-light text-light border border-2 btntranslate .btntranslate::before .btntranslate::after shadow-lg "
+            onclick="copyToClipboard('sentence')" id="btnCopy" style="font-size: 20px;">
+            Copy
+          </button>
+          <br>
+          <textarea id="sentence" class="form-control mx-auto mt-3" rows="5" id="comment" placeholder="translate:"
+            name="text"></textarea>
+        </div>
+      </div>
+      <hr>
+      <div class="fixed-img fixed-image1">
+      <section class="tours">
+        <div class="mx-auto mb-3 p-3  text-light text-center text-shadow rounded-3 shadow-lg "
+          style="background-color:   rgb(191, 197, 197);">
+          <h1 class="title" style="font-size: 40px;">Popular destinations in Turkey</h1>
+        </div>
+      </div>
+      
+     <div class="container">
+      <div class="text-center m-4"></div>
+      <div class="row">
+        <div class="col-lg-4 p-1 mt-5">
+          <div class="card" style="width: 18rem;">
+            <img src="images/photo_2023-11-01_03-45-20.jpg" class="card-img-top" alt="..." height="350">
+            <div class="card-body">
+              <h5 class="card-title">Antalya</h5>
+              <p class="card-text">Antalya is one of the most famous tourist destinations in Turkey and of course worth a visit, as it contains the most beautiful tourist activities  and entertainment attractions </p>
+              <a href="#" class="btn btn-light text-light" style="background-color:  #b6e7e2;">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 p-1 mt-5">
+          <div class="card" style="width: 18rem;">
+            <img src="images/photo_2023-11-01_03-46-54.jpg" class="card-img-top" alt="..." height="350">
+            <div class="card-body">
+              <h5 class="card-title">Istanbul</h5>
+              <p class="card-text">It possesses the best elements of a prosperous life and diverse movement, including history, modernity, and development. It has gathered beauty </p>
+              <a href="#" class="btn btn-light text-light"style="background-color:  #b6e7e2">KNOW MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 p-1 mt-5">
+          <div class="card" style="width: 18rem;">
+            <img src="images/photo_2023-11-25_03-03-53.jpg" class="card-img-top" alt="..."height="350">
+            <div class="card-body">
+              <h5 class="card-title">Çay tarlası</h5>
+              <p class="card-text">The tea village in Uzungol, one of the largest tea plantations in the world, which is known for the beauty of its hills lined with tea bushes,</p>
+              <a href="#" class="btn btn-light  text-light"style="background-color:  #b6e7e2;">KNOW MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 p-1 mt-5">
+          <div class="card" style="width: 18rem;">
+            <img src="images/photo_2023-11-01_03-45-14.jpg" class="card-img-top" alt="..." height="410">
+            <div class="card-body">
+              <h5 class="card-title">Ankara</h5>
+              <p class="card-text">Despite its reputation as the political and administrative capital of the country, Ankara has a history that makes it a great tourist value, </p>
+              <a href="#" class="btn btn-light  text-light"style="background-color: #b6e7e2;">KNOW MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 p-1 mt-5">
+          <div class="card" style="width: 18rem;">
+            <img src="images/photo_2023-11-01_03-45-49.jpg" class="card-img-top" alt="..." height="410">
+            <div class="card-body">
+              <h5 class="card-title">Kapadokya</h5>
+              <p class="card-text">The charming region of Cappadocia, located in south-central Turkey and southeast of Ankara is known  </p>
+              <a href="#" class="btn btn-light text-light"style="background-color: #b6e7e2 ;">KNOW MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 p-1 mt-5">
+          <div class="card" style="width: 18rem;">
+            <img src="images/photo_2023-10-28_01-03-47.jpg" class="card-img-top" alt="..."height="410">
+            <div class="card-body">
+              <h5 class="card-title">Trabzon</h5>
+              <p class="card-text">The city of Trabzon is distinguished by its beautiful climate, which provides an atmosphere suitable for growing crops.</p>
+              <a href="#" class="btn btn-light  text-light"style="background-color:   #b6e7e2;">KNOW MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    
+     
+      <!-- ///////////////////////////////////////////////////////////////////////////////////////// -->
+
+      <div class="row-lg-4 p-1 mt-5">
+      <hr class="my-4">
+            <div class="container  py-2">
+              <div class="h1 text-center  title  pt-1" id="pageHeaderTitle" style="font-size: 30px;">Turkey NEWS</div>
+              <article class="postcard d-flex light blue">
+                <a class="postcard__img_link" href="#">
+                  <img class="postcard__img" src="images/photo_2023-11-01_03-44-52.jpg" alt="...." width="300px" style=" clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);
+                  border-top-left-radius: 10px;
+                  border-bottom-left-radius: 10px;" />
+                </a>
+        
+            <div class="content">
+            <div class="postcard__text t-dark">
+              <h1 class="postcard__title dark">marmaris</h1>
+              <div class="postcard__subtitle small">
+                <time datetime="2020-05-25 12:00:00">
+                  <i class="fas fa-calendar-alt mr-2 mb-2"  ></i>Mon, May 25th 2020
+                </time>
+              </div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated mb-2" style="width:30%"></div>
+
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, sunt harum voluptate minima placeat unde molestiae accusamus voluptatibus dolorem esse ut maxime. Sit iste ipsam perspiciatis exercitationem aliquid. Dolorem, ut quasi qui maxime quod sunt error iusto distinctio perspiciatis et nobis dignissimos eveniet aliquid illum esse vitae vel? Aspernatur quasi debitis eos doloribus laborum mollitia dolorem, ipsum nisi perferendis neque, velit est delectus quia reprehenderit voluptate illum accusamus facere temporibus? </p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <ul class="postcard__tagbox">
+                  <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+                  <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+                  <li class="tag__item play green">
+                    <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+          
+            <div class="container  py-2">
+              <!-- <div class="h1 text-center  title  pt-1" id="pageHeaderTitle" style="font-size: 30px;">Turkey NEWS</div> -->
+              <article class="postcard d-flex light blue">
+               
+        
+            <div class="content">
+            <div class="postcard__text t-dark">
+              <h1 class="postcard__title dark p-1">azmir</h1>
+              <div class="postcard__subtitle small">
+                <time datetime="2020-05-25 12:00:00">
+                  <i class="fas fa-calendar-alt mr-2 mb-2"></i>Mon, May 25th 2020
+                </time>
+              </div>
+                <div class="progress-bar progress-bar-striped progress-bar-animated mb-2" style="width:30%"></div>
+
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, sunt harum voluptate minima placeat unde molestiae accusamus voluptatibus dolorem esse ut maxime. Sit iste ipsam perspiciatis exercitationem aliquid. Dolorem, ut quasi qui maxime quod sunt error iusto distinctio perspiciatis et nobis dignissimos eveniet aliquid illum esse vitae vel? Aspernatur quasi debitis eos doloribus laborum mollitia dolorem, ipsum nisi perferendis neque, velit est delectus quia reprehenderit voluptate illum accusamus facere temporibus? </p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <ul class="postcard__tagbox">
+                  <li class="tag__item"><i class="fas fa-tag mr-2"></i>Istanbul</li>
+                  <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+                  <li class="tag__item play green">
+                    <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <a class="postcard__img_link" href="#">
+              <img class="postcard__img" src="images/photo_2023-11-01_03-44-59.jpg"   style="clip-path: polygon(0 0, 100% 0%, 100% 100%, 6% 100%); border-top-right-radius: 10px;
+              border-bottom-right-radius: 10px;" width="300px"  />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="my-4">
+    <div class="container  py-2">
+      <!-- <div class="h1 text-center  title  pt-1" id="pageHeaderTitle" style="font-size: 30px;">Turkey NEWS</div> -->
+      <article class="postcard d-flex light blue">
+        <a class="postcard__img_link" href="#">
+          <img class="postcard__img" src="images/photo_2023-11-25_03-03-51.jpg" alt="...." width="300px" style=" clip-path: polygon(0 0, 100% 0, 91% 100%, 0% 100%);
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;"  />
+        </a>
+
+    <div class="content">
+    <div class="postcard__text t-dark">
+      <h1 class="postcard__title dark">Çay tarlası</h1>
+      <div class="postcard__subtitle small">
+        <time datetime="2020-05-25 12:00:00">
+          <i class="fas fa-calendar-alt mr-2 mb-2"></i>Mon, May 25th 2020
+        </time>
+      </div>
+        <div class="progress-bar progress-bar-striped progress-bar-animated mb-2" style="width:30%"></div>
+
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, sunt harum voluptate minima placeat unde molestiae accusamus voluptatibus dolorem esse ut maxime. Sit iste ipsam perspiciatis exercitationem aliquid. Dolorem, ut quasi qui maxime quod sunt error iusto distinctio perspiciatis et nobis dignissimos eveniet aliquid illum esse vitae vel? Aspernatur quasi debitis eos doloribus laborum mollitia dolorem, ipsum nisi perferendis neque, velit est delectus quia reprehenderit voluptate illum accusamus facere temporibus? </p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        <ul class="postcard__tagbox">
+          <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+          <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+          <li class="tag__item play green">
+            <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+</div>
+<hr class="my-4">
+<div class="container  py-2">
+  <!-- <div class="h1 text-center  title  pt-1" id="pageHeaderTitle" style="font-size: 30px;">Turkey NEWS</div> -->
+  <article class="postcard d-flex light blue">
+   
+
+<div class="content">
+<div class="postcard__text t-dark">
+  <h1 class="postcard__title dark">Istanbul</h1>
+  <div class="postcard__subtitle small">
+    <time datetime="2020-05-25 12:00:00">
+      <i class="fas fa-calendar-alt mr-2 mb-2"></i>Mon, May 25th 2020
+    </time>
+  </div>
+    <div class="progress-bar progress-bar-striped progress-bar-animated mb-2" style="width:30%"></div>
+
+    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, sunt harum voluptate minima placeat unde molestiae accusamus voluptatibus dolorem esse ut maxime. Sit iste ipsam perspiciatis exercitationem aliquid. Dolorem, ut quasi qui maxime quod sunt error iusto distinctio perspiciatis et nobis dignissimos eveniet aliquid illum esse vitae vel? Aspernatur quasi debitis eos doloribus laborum mollitia dolorem, ipsum nisi perferendis neque, velit est delectus quia reprehenderit voluptate illum accusamus facere temporibus? </p>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <ul class="postcard__tagbox">
+      <li class="tag__item"><i class="fas fa-tag mr-2"></i>Podcast</li>
+      <li class="tag__item"><i class="fas fa-clock mr-2"></i>55 mins.</li>
+      <li class="tag__item play green">
+        <a href="#"><i class="fas fa-play mr-2"></i>Play Episode</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<a class="postcard__img_link" href="#">
+  <img class="postcard__img" src="images/photo_2023-10-28_01-03-45.jpg"   style="clip-path: polygon(0 0, 100% 0%, 100% 100%, 6% 100%); border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;"alt="...." width="300px"  />
+</a>
+</div>
+</div>
+</div>
+</div>
+    
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+    <h2 class="text-center title p-4" style="font-size: 30px; color: rgb(178, 185, 185);">Join Us</h2>
+    <div class="row-lg-4 p-1 mt-5">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="carrd m-3 bg-light " style="width: 250px; box-shadow: -5px -5px 20px 10px rgb(201, 198, 241);">
+          <div class="card-body  d-flex flex-column text-center">
+            <h3 class="card-title mb-4" style="color: rgb(177, 194, 194);">Subscribe Now
+            </h3>
+            <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="c:\Users\NeO  Customer-PC\Downloads\Telegram Desktop\photo_2023-11-23_03-14-51.jpg" type="image"
+              alt="icon" height="130px" width="130px">
+            <a href="#" target="_blank" class="card-link h4   " id="ccx">Go to link</a>
+          </div>
+        </div>
+        <div class="carrd m-3 bg-light " style="width: 250px; box-shadow: -5px -5px 20px 10px rgb(201, 198, 241);">
+          <div class="card-body  d-flex flex-column text-center">
+            <h3 class="card-title mb-4" style="color: rgb(177, 194, 194);">Follow
+            </h3>
+            <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="images/photo_2023-11-23_03-14-57.jpg" type="image"
+              alt="icon"height="130px" width="130px">
+            <a href="" target="_blank" class="card-link h4 "id="ccx">Go to link</a>
+          </div>
+        </div>
+        <div class="carrd m-3 bg-light " style="width: 250px;  box-shadow: -5px -5px 20px 10px rgb(201, 198, 241)">
+          <div class="card-body d-flex flex-column text-center">
+            <h3 class="card-title mb-4"style="color: rgb(177, 194, 194);">Like the page
+            </h3>
+            <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="images/photo_2023-11-23_03-14-53.jpg" type="image"
+              alt="icon" height="130px" width="130px">
+            <a href="" target="_blank" class="card-link h4 "id="ccx">Go to link</a>
+          </div>
+        </div>
+        <div class="carrd m-3 bg-light " style="width: 250px; box-shadow: -5px -5px 20px 10px rgb(201, 198, 241)">
+          <div class="card-body  d-flex flex-column text-center">
+            <h3 class="card-title mb-4"style="color: rgb(177, 194, 194);">watch vedios
+            </h3>
+            <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="images/photo_2023-11-23_03-14-56.jpg" type="image"
+              alt="icon" height="130px" width="130px">
+            <a href="" target="_blank" class="card-link h4  "id="ccx">Go to link</a>
+          </div>
+        </div>
+        <div class="carrd m-3 bg-light " style="width: 250px;  box-shadow: -5px -5px 20px 10px rgb(201, 198, 241)">
+          <div class="card-body d-flex flex-column text-center">
+            <h3 class="card-title mb-4"style="color: rgb(177, 194, 194);">Like the page
+            </h3>
+            <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="images/photo_2023-11-23_03-14-55.jpg" type="image"
+              alt="icon" height="130px" width="130px">
+            <a href="" target="_blank" class="card-link h4  "id="ccx">Go to link</a>
+          </div>
+        </div>
+        <div class="carrd m-3 bg-light " style="width: 250px;  box-shadow: -5px -5px 20px 10px rgb(201, 198, 241)">
+          <div class="card-body  d-flex flex-column text-center">
+            <h3 class="card-title mb-4" style="color: rgb(177, 194, 194);">Like the page
+            </h3>
+            <input class="logoicon mb-2 rounded-4" style="align-self: center;" src="images/photo_2023-11-23_03-14-59.jpg" type="image"
+              alt="icon" height="130px" width="130px">
+            <a href="" target="_blank" class="card-link h4 "id="ccx">Go to link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
+    <hr>
+    <div class="row-lg-4  ">
+    <footer class=" text-light pt-5 bg-secondary">
+      <div class="container-fluid">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <hr class=" border-top border-3 border-light my-3">
+            <h5><img src="images/photo_2023-11-01_03-46-12.jpg" alt="good pic" class="logoicon rounded-circle" height="100px" width="100px">&nbsp; Good Company</h5>
+            <hr class="border-top border-3 border-light my-3">
+            <address>
+              <p>Tel : 000-000-000</p>
+              <p>Address : EGYPT</p>
+              <p>Fax : 000-000-000</p>
+            </address>
+          </div>
+          <div class="col-md-4">
+            <hr class="border-top border-3 border-light my-3">
+            <h5><img src="images/photo_2023-11-01_03-46-15.jpg" alt="good pic" class="logoicon rounded-circle "height="100px" width="100px">&nbsp; Important links</h5>
+            <hr class="border-top border-3 border-light my-3">
+            <p><a href="#">Visit Us</a></p>
+            <p><a href="#">Take alook</a></p>
+            <p><a href="#">Your health is more important</a></p>
+          </div>
+          <div class="col-md-4">
+            <hr class="border-top border-3 border-light my-3">
+            <h5><img src="images/photo_2023-11-01_03-45-43.jpg" alt="good pic" class="logoicon rounded-circle" height="100px" width="100px">&nbsp; Vision</h5>
+            <hr class="border-top border-3 border-light my-3">
+            <p>Serveices for all </p>
+            <p>Provide best serveices</p>
+            <p>you will be better than before</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <hr class="border-top border-3 border-light my-3">
+      <span class="text-center d-block title p-4" style="font-size: 25px; color: #3b373b; box-shadow: -5px -5px 20px 10px; font-family: fantasy; font-weight: bold;">Copyright &copy; 2023 OMNIA KHALED, Good Company. All
+        rights</span>
+      <hr class="border-top border-3 border-light my-3">
+      <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+        </script>
+        <script type-text="javascript">
+          function copyToClipboard(id) {
+                  var from = document.getElementById(id);
+                  var range = document.createRange();
+                  window.getSelection().removeAllRanges();
+                  range.selectNode(from);
+                  window.getSelection().addRange(range);
+                  document.execCommand('copy');
+                  window.getSelection().removeAllRanges();
+                  window.alert("تم نسخ النص.");
+           }
+          </script>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

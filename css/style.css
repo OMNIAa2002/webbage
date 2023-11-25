@@ -1,0 +1,194 @@
+body{
+    height: 5000px;
+}
+
+
+
+.navbar-brand:hover{
+   
+    opacity: 0.5;
+   text-shadow: 4px 5px 17px rgb(190, 192, 201);
+   background: -webkit-linear-gradient(90deg,rgb(22, 45, 139));
+
+}
+#navbarScrollingDropdown{
+    color: #238aa7;
+}
+#navbarScrollingDropdown:hover{
+    font-size: 20px;
+    text-shadow: -4px 4px 17px rgb(65, 65, 155);
+}
+.form-control{
+    border-radius: 50px;
+}
+.btn {
+    border-radius: 50px;
+}
+.carousel-caption{
+    background-color: rgb(17, 16, 16);
+    opacity: 0.7;
+    border-radius: 20px;
+}
+.navbar-brand{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+hr{
+    background-color: black;
+}
+#collapseTwo{
+    border: 3px rgb(136, 54, 54);
+}
+.fixed-img{
+    position: relative;
+    background-image: url(../images/المنطاد-في-تركيا.jpg);
+    height:350px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container-fluid{
+    float: left;
+}
+.fixeed-imgg{
+    position: relative;
+    background-image: url(../images/11678_istanbul-city-turkey-hd-wallpapers_1024x768_h.jpg);
+    height:350px;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 100px;
+}
+.card {
+    position: relative;
+}
+.card::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0 ;
+    top: 0;
+    left: 0;
+    background-color: #aac4c1;
+    transition: 1s;
+    opacity:0;
+}
+.card:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity:0.5;
+    
+}
+.card::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height:0 ;
+    bottom: 0;
+    right: 0;
+    background-color: #0e0d0d;
+    opacity:0;
+    transition: 1s;
+   
+}
+.card:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity:0.1;
+    transition: 1s;
+}
+
+#rr{
+    background-color: rgb(170, 187, 187);
+    padding: 8px;
+    
+
+}
+#btnCopy{
+    background-color: rgb(170, 187, 187);
+    
+}
+.postcard__tagbox li {
+    list-style-type: none;
+    background-color: #88bfce;
+    margin-left: 10px;
+    border: 2px;
+    border-radius: 3px;
+    height: 27px;
+    width: 140px;
+   display: inline-block;
+}
+.postcard__tagbox li:hover{
+   background-color: #5e5b5b;
+    transition: 1s;
+}
+.container .h1{
+    color: #101213;
+    background: -webkit-linear-gradient(90deg,rgb(165, 160, 165));
+    background-clip: text;
+    transition: 0.6s;
+    /* -webkit-text-fill-color: transparent; */
+    font-weight: bolder;
+    font-size: 22px;
+}
+.postcard__img{
+    /* overflow: hidden; */
+   
+    transition: 3s;
+}
+.postcard__img:hover{
+transform: scale(1.1,1.1);
+}
+.card-header{
+    background: -webkit-linear-gradient(90deg,rgb(165, 160, 165));
+    background-clip: text;
+    transition: 0.6s;
+    /* -webkit-text-fill-color: transparent; */
+    font-weight: bolder;
+    font-size: 22px;
+}
+.postcard h1{
+    color: #c6e4e2;
+    /* margin-left: 20px; */
+}
+.postcard h1:hover{
+    color: #645e5e;
+}
+.content{
+    margin-left: 35px;
+}
+.fas{
+    padding: 6px;
+}
+.progress-bar{
+    height: 7px;
+    background-color: #a2b5b9;
+    border-radius: 3px;
+    color: white;
+
+}
+.logoicon{
+    border-radius: 20px;
+}
+#ccx{
+    text-decoration-line: none;
+    color: #343535;
+}
+#ccx:hover{
+  
+   color: #62a9d1;
+}
+h2 {
+    box-shadow: -5px -5px 20px 10px;
+}
+footer{
+    margin-top: 700px;
+    height: 450px;
+}
+p a{
+    text-decoration-line: none;
+    color: #b6e7e2;
+}
+.aside-icon a{
+color: #b4cccf;
+}
+.aside-icon a:hover{
+    color: #0e0d0d;
+}
